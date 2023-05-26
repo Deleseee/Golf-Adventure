@@ -5,27 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class ManejadorNiveles : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Nivel1()
     {
-        SceneManager.LoadScene("Mapa1");
+        SceneManager.LoadScene("Mapa1", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Niveles");
     }
     public void Nivel2()
     {
-        SceneManager.LoadScene("Mapa2");
+        SceneManager.LoadScene("Mapa2", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Niveles");
     }
     public void Nivel3()
     {
-        SceneManager.LoadScene("Mapa3");
+        SceneManager.LoadScene("Mapa3", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Niveles");
+    }
+    public void Volver()
+    {
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Niveles");
     }
 }

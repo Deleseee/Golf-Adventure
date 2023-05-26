@@ -5,23 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class ManejadorMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static bool activo = true;
     public void Jugar()
     {
-        SceneManager.LoadScene("niveles");
+        SceneManager.LoadScene("Niveles", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("MainMenu");
     }
     public void Salir()
     {
         Application.Quit();
+    }
+    public void Opciones()
+    {
+        activo = false;
+        SceneManager.UnloadSceneAsync("MainMenu");
     }
 }
