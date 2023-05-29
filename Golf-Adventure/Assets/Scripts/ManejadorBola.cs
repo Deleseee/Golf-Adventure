@@ -58,7 +58,6 @@ public class ManejadorBola : MonoBehaviour
                 SonidoTiro.Play();
                 position = bola.transform.position;
                 tiros++;
-
             }
         }
         if (muerte)

@@ -7,13 +7,20 @@ public class CambiarMusica : MonoBehaviour
 {
     public AudioClip cancion;
     private ManejadorSonido manejadorSonido;
+    private GameObject pantalla;
     void Start()
     {
+        pantalla = GameObject.Find("CambiarMusica");
         manejadorSonido = FindObjectOfType<ManejadorSonido>();
-        manejadorSonido.CambiarMusica(cancion);
-    }
-    void Update()
-    {
+        if (pantalla.activeSelf)
+        {
+            cambiarMusica();
 
+        }
+    }
+    private void cambiarMusica()
+    {
+        manejadorSonido.CambiarMusica(cancion);
+        pantalla.gameObject.SetActive(false);
     }
 }

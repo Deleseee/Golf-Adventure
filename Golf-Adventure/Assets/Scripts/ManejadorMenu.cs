@@ -6,6 +6,13 @@ using UnityEngine.SceneManagement;
 public class ManejadorMenu : MonoBehaviour
 {
     public static bool activo = true;
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name != "Musica")
+        {
+            SceneManager.LoadScene("Musica", LoadSceneMode.Additive);
+        }
+    }
     public void Jugar()
     {
         SceneManager.LoadScene("Niveles", LoadSceneMode.Additive);

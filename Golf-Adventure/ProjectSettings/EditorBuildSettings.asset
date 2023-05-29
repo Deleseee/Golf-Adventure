@@ -9,21 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 474a7e969bac14044bb6839b49b3a3b2
   - enabled: 1
+    path: Assets/Scenes/Completado.unity
+    guid: 9b9937d7c1a1c8849bd58949910ad7a8
+  - enabled: 1
+    path: Assets/Scenes/NoCompletado.unity
+    guid: adc1f844661ebce43a266078c8b9c388
+  - enabled: 1
+    path: Assets/Scenes/niveles.unity
+    guid: 963c3ad2c2bd0cf4aa6987dfcf37718d
+  - enabled: 1
     path: Assets/Scenes/Mapa1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Mapa2.unity
     guid: df9d8f943ab6b224d824a58be1be1116
   - enabled: 1
-    path: Assets/Scenes/niveles.unity
-    guid: 963c3ad2c2bd0cf4aa6987dfcf37718d
-  - enabled: 1
     path: Assets/Scenes/Mapa3.unity
-    guid: 01ecef373e1a06b4d9ef8b12e974e480
+    guid: 9e3e9e09afe615249a801bdd7a5ae84c
   - enabled: 1
-    path: Assets/Scenes/NoCompletado.unity
-    guid: adc1f844661ebce43a266078c8b9c388
-  - enabled: 1
-    path: Assets/Scenes/Completado.unity
-    guid: 9b9937d7c1a1c8849bd58949910ad7a8
+    path: Assets/Scenes/Musica.unity
+    guid: 4480f2ec66c360d47b438811338ec6a9
   m_configObjects: {}
