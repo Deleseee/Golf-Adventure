@@ -24,6 +24,7 @@ public class ManejadorSonido : MonoBehaviour
     }
     private void Update()
     {
+        
         if (!ManejadorMenu.activo)
         {
             pantalla.gameObject.SetActive(true);
@@ -49,6 +50,9 @@ public class ManejadorSonido : MonoBehaviour
     {
         ManejadorMenu.activo = true;
         PlayerPrefs.SetFloat("Volumen", volumen.value);
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+        if (SceneManager.GetActiveScene().name != "MainMenu")
+        {   
+            SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+        }
     }
 }
